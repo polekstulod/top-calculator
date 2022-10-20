@@ -9,9 +9,46 @@
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤡</text></svg>"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
     <title>TOP Calculator</title>
   </head>
   <body>
+    <main>
+      <div class="calculator">
+        <div class="screen">
+          <h1 id="total">0</h1>
+        </div>
+        <div class="button">
+          <button class="btn" id="clear">Clear</button>
+          <button class="btn" id="backspace">Delete</button>
+          <button class="btn" id="seven-btn">7</button>
+          <button class="btn" id="eight-btn">8</button>
+          <button class="btn" id="nine-btn">9</button>
+          <button class="btn" id="divide">/</button>
+          <button class="btn" id="four-btn">4</button>
+          <button class="btn" id="five-btn">5</button>
+          <button class="btn" id="six-btn">6</button>
+          <button class="btn" id="multiply">*</button>
+          <button class="btn" id="one-btn">1</button>
+          <button class="btn" id="two-btn">2</button>
+          <button class="btn" id="three-btn">3</button>
+          <button class="btn" id="minus">-</button>
+          <button class="btn" id="zero-btn">0</button>
+          <button class="btn" id="decimal">.</button>
+          <button class="btn" id="equals">=</button>
+          <button class="btn" id="plus">+</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      Copyright © <span id="currentYear"></span> polekstulod
+      <a href="http://github.com/polekstulod">
+        <img class="icons" src="./assets/github.png" alt="github"
+      /></a>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
