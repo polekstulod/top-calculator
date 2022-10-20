@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+
+:root {
+  /* >> Colors */
+  --background: #282a36;
+  --current-line: #44475a;
+  --foreground: #f8f8f2;
+  --comment: #6272a4;
+  --red: #ff5555;
+  --orange: ##ffb86c;
+  --yellow: #f1fa8c;
+  --green: #50fa7b;
+  --purple: #bd93f9;
+  --cyan: #8be9fd;
+  --pink: #ff79c6;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Cantarell', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px;
+}
+
+.calculator {
+  background-color: var(--current-line);
+  max-width: 350px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 25px;
+}
+
+.screen {
+  background-color: var(--comment);
+  width: 90%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  width: 75px;
+  height: 75px;
+  padding: 0;
+  cursor: pointer;
+  background-color: var(--comment);
+}
+
+.btn-img.large {
+  height: 70px;
+  width: 70px;
+}
+
+.btn-img.small {
+  width: 50px;
+  height: 50px;
+}
+
+.btn.large {
+  width: 160px;
+}
+
+.icons {
+  width: 24px;
+  height: 24px;
+}
