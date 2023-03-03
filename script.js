@@ -26,6 +26,36 @@ function operate(op, a, b) {
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
-    total.textContent += button.getAttribute('value').trim()
+    if (button.id === 'clear') {
+      total.textContent = ''
+      firstValue = 0
+      secondValue = 0
+      operator = ''
+      result = 0
+    } else if (button.id === 'backspace') {
+      total.textContent = total.textContent.slice(0, -1)
+    } else if (button.id === 'equals') {
+      secondValue = Number(total.textContent)
+      result = operate(operator, firstValue, secondValue)
+      total.textContent = result
+    } else if (button.id === 'plus') {
+      firstValue = Number(total.textContent)
+      operator = '+'
+      total.textContent = ''
+    } else if (button.id === 'minus') {
+      firstValue = Number(total.textContent)
+      operator = '-'
+      total.textContent = ''
+    } else if (button.id === 'multiply') {
+      firstValue = Number(total.textContent)
+      operator = '*'
+      total.textContent = ''
+    } else if (button.id === 'divide') {
+      firstValue = Number(total.textContent)
+      operator = '/'
+      total.textContent = ''
+    } else {
+      total.textContent += button.getAttribute('value').trim()
+    }
   })
 })
